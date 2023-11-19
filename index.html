@@ -7,14 +7,50 @@
     <script src="coverflow.js"></script>
 
 	<meta name="viewport" content="width=device-width" /> 
+	<style>
+		#scrolling-banner {
+		  width: 100%;
+		  overflow: hidden;
+		}
 	
-	</head> 
+		#image-container {
+		  white-space: nowrap;
+		  animation: scroll 10s linear infinite;
+		}
+	
+		.banner-image {
+		  display: inline-block;
+		  width: 100%;
+		  max-width: 300px; /* Adjust the max-width as needed */
+		}
+	
+		@keyframes scroll {
+		  0% {
+			transform: translateX(100%);
+		  }
+		  100% {
+			transform: translateX(-100%);
+		  }
+		}
+	  </style>
+	</head>
+	
 	
 	
 	<body> 
 		<body> 
-			<div class="wrap" id="coverflow1"> 
-			
+			<div id="scrolling-banner">
+				<div id="image-container">
+				  <img src="images/image 1.jpeg" class="banner-image" alt="Image 1"  style="width: 400px; height: 400px;">
+				  <img src="images/image 2.jpeg" class="banner-image" alt="Image 2"  style="width: 400px; height: 400px;">
+				  <img src="images/image 3.jpeg" class="banner-image" alt="Image 3"  style="width: 400px; height: 400px;">
+				  <img src="images/image 4.jpeg" class="banner-image" alt="Image 4"  style="width: 400px; height: 400px;">
+				  <img src="images/image 5.jpeg" class="banner-image" alt="Image 5"  style="width: 400px; height: 400px;">
+				  <img src="images/image 6.jpeg" class="banner-image" alt="Image 6"  style="width: 400px; height: 400px;">
+				</div>
+			  </div>
+			  
+			<div class="wrap" id="coverflow1"> 			
 			<div class="scrollbar"> 
 			<div class="handle"> 
 			<div class="mousearea"></div> 
@@ -23,7 +59,7 @@
 			
 			<div class="frame coverflow"> 
 			<ul class="clearfix"> 
-			<li>Holder</li> 
+			<li>faith nazi</li> 
 			</ul> 
 			</div> 
 			
